@@ -1,32 +1,36 @@
 class Gafanhoto:
-    def __init__(self):
+    """
+    Essa classe cira um gafanhoto que é uma pessoa que tem nome e  idade
+
+    Para criar uma nova pessoa, use
+    variavel = gafanhoto(nome, idade)
+    """
+    def __init__(self, nome = "Vazio", idade = 0):
         # Atributos de instancia
-        self.nome = ""
-        self.idade = 0
+        self.nome = nome
+        self.idade = idade
 
     # Metodos de instancia
     def aniversario(self):
         self.idade = self.idade + 1
 
 
-    def mensagem(self):
+    def __str__(self): #Dunder Method
         return f"{self.nome} é Gafanhoto(a) e tem {self.idade} anos de idade."
+
+    def __getstate__(self):
+        return f"estado: nome = {self.nome} ; idade = {self.idade}"
 
 
 # Declaracao de objetos
-g1 = Gafanhoto()
-g1.nome = "Maria"
-g1.idade = 17
+g1 = Gafanhoto(nome = "Maria", idade = 17)
 g1.aniversario()
-print(g1.mensagem())
+#print(g1)
+print(g1.__dict__) # Attribute
+print(g1.__getstate__()) # Method
+print(g1.__class__)
+print(g1.__doc__) #Dunder Attribute
 
-g2 = Gafanhoto()
-g2.nome = "Mauro"
-g2.idade = 53
-g2.aniversario()
-print(g2.mensagem())
 
-g3 = Gafanhoto()
-print(g3.mensagem())
 
 
