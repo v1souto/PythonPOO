@@ -30,4 +30,17 @@ class Caneta:
     def destampar(self):
         self.tampada = False
 
-c1 =
+c1 = Caneta("azul")
+c2 = Caneta("vermelha")
+c3 = Caneta("verde")
+c1.destampar()
+c2.destampar()
+c3.destampar()
+
+c1.escrever("Ola, Mundo!")
+c2.escrever("Funciona")
+c2.quebrar_linha(2)
+c3.escrever("Deu certo")
+c3.quebrar_linha(5)
+#c1.tampar()
+c1.escrever("Sera que rola")
