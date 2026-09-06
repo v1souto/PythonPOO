@@ -78,5 +78,5 @@ while True:
         case '-':
             c.volume_menos()
         case '+':
-            c.colume_mais()
+            c.volume_mais()
     print("\n" * 10)
