@@ -7,7 +7,7 @@ class ControleRemoto:
     volume_min:int = 1
     volume_max:int = 5
 
-    def __init(self, canal = 1, volume = 2):
+    def __init__(self, canal = 1, volume = 2):
         self.canal_atual:int = canal
         self.volume_atual:int = volume
         self.ligado:bool = False
@@ -78,5 +78,5 @@ while True:
         case '-':
             c.volume_menos()
         case '+':
-            c.colume_mais()
+            c.volume_mais()
     print("\n" * 10)
