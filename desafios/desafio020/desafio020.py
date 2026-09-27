@@ -17,7 +17,7 @@ class Gamer:
         conteudo += f"\nJogos favoritos:"
         for num, game in enumerate(self.favoritos):
             conteudo += f"\n:video_game: [blue] {game} [/]"
-        painel = Panel(conteudo, tittle=f"Jogador <{self.nick}>", width=40)
+        painel = Panel(conteudo, title=f"Jogador <{self.nick}>", width=40)
         print(painel)
 
 
