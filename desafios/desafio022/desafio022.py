@@ -8,6 +8,10 @@ class ControleRemoto:
     volume_max:int = 5
 
     def __init__(self, canal = 1, volume = 2):
+        """
+
+        :rtype: None
+        """
         self.canal_atual:int = canal
         self.volume_atual:int = volume
         self.ligado:bool = False
