@@ -20,3 +20,18 @@ class Quadrado(Poligono):
     def __init__(self, lado = 1):
         super().__init__(4)
         self.lado = lado
+
+    def perimetro(self):
+        return self.lado ** 2
+
+class Circulo(Poligono):
+
+    def __init__(self, raio = 1):
+        super() .__init__(0)
+        self.raio = raio
+
+    def perimetro(self):
+        return 2 * math.pi * self.raio
+
+    def area(self):
+        return math.pi * self.raio ** 2
