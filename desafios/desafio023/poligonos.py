@@ -2,7 +2,7 @@ import math
 from abc import ABC, abstractmethod
 
 
-class Poligono(ABC):
+class poligono(ABC):
 
     def __init__(self, lados):
         self.qtd_lados = lados
@@ -14,6 +14,11 @@ class Poligono(ABC):
     @abstractmethod
     def area(self) -> float:
         pass
+
+
+class Poligono:
+    pass
+
 
 class Quadrado(Poligono):
 

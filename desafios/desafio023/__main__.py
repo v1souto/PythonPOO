@@ -1,5 +1,5 @@
 from rich import print, inspect
-from poligono import Quadrado, Circulo
+from Poligono import Quadrado, Circulo
 
 def main():
     q = Quadrado(20)
