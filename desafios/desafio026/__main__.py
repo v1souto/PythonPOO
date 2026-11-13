@@ -8,3 +8,6 @@ def main():
     f2.calcular_salario()
     f2.analisar_salario()
     #inspect(f1)
+
+if __name__ == "__main__":
+    main()
