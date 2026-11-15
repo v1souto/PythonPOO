@@ -11,5 +11,5 @@ def main():
     p2.curar()
 
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     main()
