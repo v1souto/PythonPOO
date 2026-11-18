@@ -20,3 +20,4 @@ def main():
         print(tabela)
 
 if __name__ == "__main__":
+    main()
